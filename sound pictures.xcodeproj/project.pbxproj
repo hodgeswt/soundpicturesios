@@ -16,6 +16,8 @@
 		BEA50C5A27585809000D1FA3 /* ExamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C5927585809000D1FA3 /* ExamplesView.swift */; };
 		BEA50C5C275859B3000D1FA3 /* TripleSpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C5B275859B3000D1FA3 /* TripleSpacer.swift */; };
 		BEA50C5E275861BB000D1FA3 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C5D275861BB000D1FA3 /* RecordView.swift */; };
+		BEA50C60275879F3000D1FA3 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C5F275879F3000D1FA3 /* Recorder.swift */; };
+		BEA50C6227587ED4000D1FA3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C6127587ED4000D1FA3 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		BEA50C5927585809000D1FA3 /* ExamplesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesView.swift; sourceTree = "<group>"; };
 		BEA50C5B275859B3000D1FA3 /* TripleSpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleSpacer.swift; sourceTree = "<group>"; };
 		BEA50C5D275861BB000D1FA3 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		BEA50C5F275879F3000D1FA3 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		BEA50C6127587ED4000D1FA3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				BEA50C5B275859B3000D1FA3 /* TripleSpacer.swift */,
 				BEA50C5927585809000D1FA3 /* ExamplesView.swift */,
 				BEA50C5D275861BB000D1FA3 /* RecordView.swift */,
+				BEA50C5F275879F3000D1FA3 /* Recorder.swift */,
+				BEA50C6127587ED4000D1FA3 /* Player.swift */,
 				BEA50C4827584D9A000D1FA3 /* Assets.xcassets */,
 				BEA50C4D27584D9A000D1FA3 /* Persistence.swift */,
 				BEA50C4F27584D9A000D1FA3 /* sound_pictures.xcdatamodeld */,
@@ -159,6 +165,8 @@
 				BEA50C5C275859B3000D1FA3 /* TripleSpacer.swift in Sources */,
 				BEA50C5A27585809000D1FA3 /* ExamplesView.swift in Sources */,
 				BEA50C4527584D99000D1FA3 /* sound_picturesApp.swift in Sources */,
+				BEA50C6227587ED4000D1FA3 /* Player.swift in Sources */,
+				BEA50C60275879F3000D1FA3 /* Recorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
