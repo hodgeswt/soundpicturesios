@@ -79,8 +79,8 @@
 				BEA50C6427588E91000D1FA3 /* InstructionsView.swift */,
 				BEA50C5F275879F3000D1FA3 /* Recorder.swift */,
 				BEA50C6127587ED4000D1FA3 /* Player.swift */,
-				BEA50C4827584D9A000D1FA3 /* Assets.xcassets */,
 				BEA50C4D27584D9A000D1FA3 /* Persistence.swift */,
+				BEA50C4827584D9A000D1FA3 /* Assets.xcassets */,
 				BEA50C4F27584D9A000D1FA3 /* sound_pictures.xcdatamodeld */,
 				BEA50C4A27584D9A000D1FA3 /* Preview Content */,
 			);
