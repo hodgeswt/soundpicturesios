@@ -30,6 +30,13 @@ struct ContentView: View {
                         .font(.title)
                 }
                 
+                TripleSpacer()
+                
+                NavigationLink(destination: InstructionsView()) {
+                    Text("instructions")
+                        .font(.title)
+                }
+                
                 Spacer()
                 
             }

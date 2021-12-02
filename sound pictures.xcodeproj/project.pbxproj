@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE9311DC2758935500198748 /* TextView in Frameworks */ = {isa = PBXBuildFile; productRef = BE9311DB2758935500198748 /* TextView */; };
 		BEA50C4527584D99000D1FA3 /* sound_picturesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C4427584D99000D1FA3 /* sound_picturesApp.swift */; };
 		BEA50C4727584D99000D1FA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C4627584D99000D1FA3 /* ContentView.swift */; };
 		BEA50C4927584D9A000D1FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA50C4827584D9A000D1FA3 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 		BEA50C5E275861BB000D1FA3 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C5D275861BB000D1FA3 /* RecordView.swift */; };
 		BEA50C60275879F3000D1FA3 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C5F275879F3000D1FA3 /* Recorder.swift */; };
 		BEA50C6227587ED4000D1FA3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C6127587ED4000D1FA3 /* Player.swift */; };
+		BEA50C6527588E92000D1FA3 /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA50C6427588E91000D1FA3 /* InstructionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,7 @@
 		BEA50C5F275879F3000D1FA3 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		BEA50C6127587ED4000D1FA3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		BEA50C632758868B000D1FA3 /* sound-pictures-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "sound-pictures-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BEA50C6427588E91000D1FA3 /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9311DC2758935500198748 /* TextView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +76,7 @@
 				BEA50C5B275859B3000D1FA3 /* TripleSpacer.swift */,
 				BEA50C5927585809000D1FA3 /* ExamplesView.swift */,
 				BEA50C5D275861BB000D1FA3 /* RecordView.swift */,
+				BEA50C6427588E91000D1FA3 /* InstructionsView.swift */,
 				BEA50C5F275879F3000D1FA3 /* Recorder.swift */,
 				BEA50C6127587ED4000D1FA3 /* Player.swift */,
 				BEA50C4827584D9A000D1FA3 /* Assets.xcassets */,
@@ -106,6 +111,9 @@
 			dependencies = (
 			);
 			name = "sound pictures";
+			packageProductDependencies = (
+				BE9311DB2758935500198748 /* TextView */,
+			);
 			productName = "sound pictures";
 			productReference = BEA50C4127584D99000D1FA3 /* sound pictures.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +142,9 @@
 				Base,
 			);
 			mainGroup = BEA50C3827584D99000D1FA3;
+			packageReferences = (
+				BE9311DA2758935500198748 /* XCRemoteSwiftPackageReference "TextView" */,
+			);
 			productRefGroup = BEA50C4227584D99000D1FA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEA50C4E27584D9A000D1FA3 /* Persistence.swift in Sources */,
+				BEA50C6527588E92000D1FA3 /* InstructionsView.swift in Sources */,
 				BEA50C4727584D99000D1FA3 /* ContentView.swift in Sources */,
 				BEA50C5127584D9A000D1FA3 /* sound_pictures.xcdatamodeld in Sources */,
 				BEA50C5E275861BB000D1FA3 /* RecordView.swift in Sources */,
@@ -373,6 +385,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE9311DA2758935500198748 /* XCRemoteSwiftPackageReference "TextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kenmueller/TextView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE9311DB2758935500198748 /* TextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE9311DA2758935500198748 /* XCRemoteSwiftPackageReference "TextView" */;
+			productName = TextView;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BEA50C4F27584D9A000D1FA3 /* sound_pictures.xcdatamodeld */ = {
