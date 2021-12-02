@@ -100,7 +100,7 @@ struct RecordView: View {
                 for file in directoryContents {
                     if file.path.hasSuffix("sound.m4a") {
                         // If our file does exist
-                        let serverUrl = URL(string: "http://localhost:5000/sound_picture")
+                        let serverUrl = URL(string: "http://soundpictures.herokuapp.com/sound_picture")
                         
                         let urlSession = URLSession.shared
                         let boundary = UUID().uuidString
