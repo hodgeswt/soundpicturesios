@@ -43,13 +43,10 @@ struct RecordView: View {
                 if !self.buttonState {
                     // Start recording
                     self.recorded = false
-                    let session: AVAudioSession! = AVAudioSession.sharedInstance()
-                    do {
-                        try session.setCategory(.playAndRecord, mode: .default)
-                        try session.setActive(true)
                     
-                        self.buttonState = self.recorder.record(url: self.url)
-                    } catch {
+                    self.buttonState = self.recorder.record(url: self.url)
+                    
+                    if self.buttonState == false {
                         self.showRecordingFailAlert = true
                     }
                 } else {
