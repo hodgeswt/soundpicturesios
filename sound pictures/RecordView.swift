@@ -18,6 +18,8 @@ struct RecordView: View {
     @State var receivedImages = false
     @State var imageJson: [String: String]! = nil
     
+    @State var showDetailView = false
+    
     var url: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("sound.m4a")
     
     @ObservedObject var recorder = Recorder()
@@ -37,7 +39,13 @@ struct RecordView: View {
     
     @ViewBuilder
     var body: some View {
-        ScrollView {
+        VStack {
+            NavigationLink(
+                destination: ResultsView(imageJson: self.imageJson),
+                isActive: $showDetailView) {
+                        EmptyView()
+                }
+            
             Button(action: {
                 
                 if !self.buttonState {
@@ -122,7 +130,7 @@ struct RecordView: View {
                                         let jsonData = try? JSONSerialization.jsonObject(with: responseData!, options: .allowFragments)
                                                 if let json = jsonData as? [String: String] {
                                                     self.imageJson = json
-                                                    self.receivedImages = true
+                                                    self.showDetailView = true
                                                 }
                                     }
                                 }
@@ -136,17 +144,18 @@ struct RecordView: View {
                 }
             }
             
-            if self.receivedImages {
-                Image(uiImage: UIImage(data: Data(base64Encoded: self.imageJson["orig"]!)!)!)
-                    .resizable()
-                    .scaledToFit()
-                Image(uiImage: UIImage(data: Data(base64Encoded: self.imageJson["new"]!)!)!)
-                    .resizable()
-                    .scaledToFit()
-                Image(uiImage: UIImage(data: Data(base64Encoded: self.imageJson["avg"]!)!)!)
-                    .resizable()
-                    .scaledToFit()
-            }
+//            if self.receivedImages {
+//                self.showDetailView = true
+////                Image(uiImage: UIImage(data: Data(base64Encoded: self.imageJson["orig"]!)!)!)
+////                    .resizable()
+////                    .scaledToFit()
+////                Image(uiImage: UIImage(data: Data(base64Encoded: self.imageJson["new"]!)!)!)
+////                    .resizable()
+////                    .scaledToFit()
+////                Image(uiImage: UIImage(data: Data(base64Encoded: self.imageJson["avg"]!)!)!)
+////                    .resizable()
+////                    .scaledToFit()
+//            }
             
             Spacer()
         }

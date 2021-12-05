@@ -11,22 +11,18 @@ import CoreData
 struct ExamplesView: View {
 
     var body: some View {
-            ScrollView {
-                Image("new")
-                    .resizable()
-                    .scaledToFit()
-                Image("orig")
-                    .resizable()
-                    .scaledToFit()
-                Image("avg")
-                    .resizable()
-                    .scaledToFit()
+            VStack {
+                ImageView(name: "new")
+                Spacer()
+                ImageView(name: "orig")
+                Spacer()
+                ImageView(name: "avg")
             }
             .padding()
             .navigationTitle("examples")
             .navigationBarTitleDisplayMode(.inline)
+            
     }
-
     
 }
 

@@ -16,6 +16,10 @@ struct InstructionsView: View {
     example images are available on the 'see examples' page.
                                     
     to record a sound, go to the 'record a sound' page and click the red record button. to stop, click the button again. once recorded, a playback option becomes available. if you want to re-record, simply re-press the record button. when you're done, click the 'convert' button and the images appear below.
+    
+    to save an image to your camera roll, long press to receive a pop-up.
+    
+    to view an image larger, tap on it to show an expanded view.
                                     
     your sound files are not stored on your device nor on the sound pictures server, available at soundpictures.herokuapp.com
                                     
